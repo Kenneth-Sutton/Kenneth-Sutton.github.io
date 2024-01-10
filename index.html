@@ -17,19 +17,20 @@
         <div class="container-fluid">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Languages</a></li>
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#edu">Education</a></li>
+            <li><a href="#lang">Languages</a></li>
           </ul>
         </div>
       </nav>
-      <p class="myName">Kenneth J Sutton</p>
+      <div class="headerImg">
+        <p class="myName">Kenneth Joseph Nacua Sutton</p>
+      </div>
     </header>
     <main>
-      <section>
-        <div>Add image of me</div>
-      </section>
-      <section class="aboutMe">
+
+      <section class="aboutMe" id="aboutMe">
+        <p class="head">About Me!</p>
         <article>
           <p>Hi, my name is Kenneth Sutton and I am currently a student at Arizona State University. I enjoy hiking, running, and seeing new places. Some of my favorite places that I have visited are:</p>
           <ol>
@@ -40,14 +41,21 @@
           </ol>
         </article>
       </section>
-      <section class="edu">
+      <section class="edu" id="edu">
+        <p class="head">My Education Journey!</p>
         <article>
           <p>I am currently pursuing my bachelors degree in Software Engineering at Arizona State University. I am also working to obtain a professional certification in full-stack development through Codecademy. Below, you will see my progress within my professional certification.</p>
           <br>
-          <div>Add progress bar here</div>
+          <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+            aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width:15%">
+              15%
+            </div>
+          </div>
         </article>
       </section>
-      <section class="lang">
+      <section class="lang" id="lang">
+        <p class="head">Languages and Frameworks I've Learned</p>
         <article>
           <p>I have worked to learn multiple coding languages including:</p>
           <ul>

@@ -1,7 +1,31 @@
 .myName {
-    height: 150px;
+    height: 100%;
     font-size: 100px;
     font-weight: bold;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
+header {
+    padding-bottom: 20px;
+
+}
+.headerImg {
+    background-image: url(../ireland.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    height: 350px;
+    margin-top: -20px;
+}
+
+.head {
+    font-weight: bold;
+    font-size: large;
+}
+.me {
+    background-image: url(/Resources/me.jpeg);
+}

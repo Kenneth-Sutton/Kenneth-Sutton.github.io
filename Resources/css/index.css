@@ -87,3 +87,120 @@ header {
 .me {
     background-image: url(/Resources/me.jpeg);
 }
+
+/* Mobile Phones */
+@media only screen and (max-width: 480px) {
+    
+    /* Nav and Header */
+
+    header {
+        padding-bottom: 20px;
+    
+    }
+    .headerImg {
+        background-image: url(../ireland.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: bottom;
+        width: 100%;
+        height: auto;
+        margin-top: -20px;
+    }
+
+    /* Body */
+
+    .mainContainer {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-size: 16px;
+    }
+
+    .aboutMeContainer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-row: repeat(3, 1fr);
+        grid-gap: 20px;
+        padding: 20px;
+        max-height: 450px;
+    }
+    .aboutMe {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    img {
+        width: 95%;
+        border-radius: 30px;
+    }
+    .myPic {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    
+    }
+    .edu {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .lang {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .tools {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .aboutMeContainer {
+        display: grid;
+        grid-template-columns: 40% 30% 30%;
+        grid-row: repeat(3, 1fr);
+        grid-gap: 20px;
+        padding: 20px;
+        max-height: 450px;
+    }
+
+}
+
+/* Tablet Landscape */
+@media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    .aboutMeContainer {
+        display: grid;
+        grid-template-columns: 40% 30% 30%;
+        grid-row: repeat(3, 1fr);
+        grid-gap: 20px;
+        padding: 20px;
+        max-height: 450px;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+    .aboutMeContainer {
+        display: grid;
+        grid-template-columns: 40% 30% 30%;
+        grid-row: repeat(3, 1fr);
+        grid-gap: 20px;
+        padding: 20px;
+        margin: 20px;
+        max-height: 450px;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1601px) {
+
+}

@@ -1,3 +1,61 @@
+main {
+    margin-top: 0%;
+}
+
+.mainContainer {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 20px;
+}
+
+.aboutMeContainer {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-row: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    max-height: 450px;
+}
+
+.aboutMe {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 30px;
+}
+.myPic {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+}
+.edu {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.lang {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.tools {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
 .myName {
     height: 100%;
     font-size: 100px;
